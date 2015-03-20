@@ -4,3 +4,8 @@
 <br>
 
 <p> <%= @post.body %> </p>
+
+<%= link_to 'Edit', edit_user_post_path(@user, @post) %>
+<%= link_to 'Delete', user_path(@user),
+                      :data => {:confirm => "Are you sure?",
+                      :method => "delete"} %>
