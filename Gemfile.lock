@@ -1,15 +1,4 @@
-<<<<<<< HEAD
-=======
-GIT
-  remote: git://github.com/scottvrosenthal/twitter-bootswatch-rails.git
-  revision: 665bcc304ae902c9fbabc7147bf6cd35954859f1
-  specs:
-    twitter-bootswatch-rails (3.3.2.0)
-      execjs (~> 2.3)
-      less-rails (~> 2.4)
-      railties (>= 3.1, < 5.0)
 
->>>>>>> 2eea6d9d452ed3045f595a213d7604ac0ef8cd85
 GEM
   remote: https://rubygems.org/
   specs:
@@ -68,10 +57,7 @@ GEM
       execjs
     coffee-script-source (1.9.1)
     columnize (0.9.0)
-<<<<<<< HEAD
-=======
-    commonjs (0.2.7)
->>>>>>> 2eea6d9d452ed3045f595a213d7604ac0ef8cd85
+
     debug_inspector (0.0.2)
     diff-lcs (1.2.5)
     erubis (2.7.0)
@@ -88,14 +74,7 @@ GEM
       railties (>= 4.2.0)
       thor (>= 0.14, < 2.0)
     json (1.8.2)
-<<<<<<< HEAD
-=======
-    less (2.6.0)
-      commonjs (~> 0.2.7)
-    less-rails (2.6.0)
-      actionpack (>= 3.1)
-      less (~> 2.6.0)
->>>>>>> 2eea6d9d452ed3045f595a213d7604ac0ef8cd85
+
     loofah (2.0.1)
       nokogiri (>= 1.5.9)
     mail (2.6.3)
@@ -210,9 +189,6 @@ DEPENDENCIES
   shoulda-matchers
   spring
   turbolinks
-<<<<<<< HEAD
-=======
-  twitter-bootswatch-rails!
->>>>>>> 2eea6d9d452ed3045f595a213d7604ac0ef8cd85
+
   uglifier (>= 1.3.0)
   web-console (~> 2.0)
