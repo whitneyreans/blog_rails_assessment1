@@ -23,7 +23,7 @@ class PostsController < ApplicationController
 
   def show
     @post = Post.find(params[:id])
-    @user = User.find(params[:user_id])
+    @user = @post.user
 
   end
 
@@ -44,7 +44,7 @@ class PostsController < ApplicationController
     if @post.update(post_params)
 
       flash[:notice] = "Post successfully updated!"
-      redirect_to user_path(@post.user)
+      redirect_to post_path(@post)
     else
       render :edit
     end
