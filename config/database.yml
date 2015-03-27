@@ -20,10 +20,9 @@ default: &default
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: 5
-<<<<<<< HEAD
+
   template: template0
-=======
->>>>>>> 2eea6d9d452ed3045f595a213d7604ac0ef8cd85
+
 
 development:
   <<: *default
