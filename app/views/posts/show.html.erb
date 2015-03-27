@@ -1,0 +1,24 @@
+<h1><%= @post.title %></h1>
+
+<br>
+<br>
+
+<p> <%= @post.body %> </p>
+
+<%= link_to 'Edit', edit_user_post_path(@user, @post) %>
+<%= link_to 'Delete', user_post_path(@user, @post),
+                      :data => {:confirm => "Are you sure?",
+                      :method => "delete"} %>
+
+<br>
+<br>
+<%= link_to "Add a Comment", new_post_comment_path(@post) %>
+
+
+<% if @post.comments.any? %>
+  <ul>
+  <% @post.comments.each do |comment| %>
+    <li><%= link_to comment.body, post_comment_path(@post, comment) %></li>
+  <% end %>
+  </ul>
+  <% end %>

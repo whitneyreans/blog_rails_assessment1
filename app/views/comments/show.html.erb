@@ -1,0 +1,9 @@
+<%= @comment.body %>
+<%= @comment.date %>
+
+<br>
+<br>
+<%= link_to 'Edit', edit_post_comment_path(@post, @comment) %>
+<%= link_to 'Delete', post_path(@post),
+                      :data => {:confirm => "Are you sure?",
+                      :method => "delete"} %>
