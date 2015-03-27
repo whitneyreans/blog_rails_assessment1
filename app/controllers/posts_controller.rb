@@ -24,7 +24,10 @@ class PostsController < ApplicationController
   def show
     @post = Post.find(params[:id])
     @user = User.find(params[:user_id])
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2eea6d9d452ed3045f595a213d7604ac0ef8cd85
   end
 
   def edit
@@ -42,7 +45,11 @@ class PostsController < ApplicationController
   def update
     @post = Post.find(params[:id])
     if @post.update(post_params)
+<<<<<<< HEAD
       flash[:notice] = "Post successfully updated!"
+=======
+      flash[:notice] = "Post successfullu updated!"
+>>>>>>> 2eea6d9d452ed3045f595a213d7604ac0ef8cd85
       redirect_to user_path(@post.user)
     else
       render :edit

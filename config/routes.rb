@@ -4,8 +4,11 @@ Rails.application.routes.draw do
   resources :users do
     resources :posts
   end
+<<<<<<< HEAD
 
   resources :posts do
     resources :comments
   end
+=======
+>>>>>>> 2eea6d9d452ed3045f595a213d7604ac0ef8cd85
 end
