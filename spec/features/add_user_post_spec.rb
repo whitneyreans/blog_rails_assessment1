@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe 'the add blog post process' do
+describe 'the add blog post process', js: true do
   it 'adds a new blog post' do
     @user = User.create(:name => 'Bob')
     visit user_path(@user)

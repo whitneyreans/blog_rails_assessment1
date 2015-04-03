@@ -13,7 +13,7 @@
 
 <br>
 <br>
-<%= link_to "Add a Comment", new_post_comment_path(@post) %>
+<%= link_to "Add a Comment", new_post_comment_path(@post), id: "new_comment", remote: true %>
 
 
 <% if @post.comments.any? %>

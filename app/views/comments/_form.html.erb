@@ -1,0 +1,10 @@
+<h2>Post a new comment</h2>
+
+<%=form_for [@post, @comment] do |f| %>
+<%=f.label :body %>
+<%=f.text_field :body %>
+<%=f.label :date %>
+<%=f.date_field :date%>
+
+<%=f.submit 'Post Comment' %>
+<% end %>

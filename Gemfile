@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
 # Use postgresql as the database for Active Record
@@ -36,9 +37,14 @@ group :development, :test do
   group :test, :development do
   gem 'rspec-rails'
   gem 'capybara'
+
 end
 
 group :test do
   gem 'shoulda-matchers'
+  gem 'phantomjs'
+  gem 'poltergeist'
+  gem 'database_cleaner'
+  gem 'factory_girl_rails'
 end
 end
