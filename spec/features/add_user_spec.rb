@@ -8,6 +8,7 @@ describe "the add a user process", js: true do
     fill_in 'Email', :with => "me@me.com"
     fill_in "Password", :with => "test1234"
     fill_in "Password confirmation", :with => "test1234"
+    fill_in "Phone", :with => "9183132501"
     click_on 'Sign Up'
     expect(page).to have_content 'Bob'
   end

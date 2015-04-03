@@ -10,9 +10,18 @@ end
 def create
   @post = Post.find(params[:post_id])
   @user = @post.user
-  @comment = @post.comments.new(comment_params)
+  @comment = @post.comments.create(comment_params)
+
+
   if @comment.save
     redirect_to user_post_path(@user, @post)
+  account_sid = 'ACc6964c8a4a3db68d96c62200ef279648'
+  auth_token = '9492f8b55bb69157dae5392c45537d2c'
+  @client = Twilio::REST::Client.new account_sid, auth_token
+
+  message = @client.account.messages.create(:body => "You have a comment!",
+  :To => "9183132501",
+  :From => "9189217006")
   else
     render :new
   end
@@ -29,6 +38,7 @@ def edit
 end
 
 def destroy
+  @post = Post.find(params[:post_id])
   @comment = Comment.find(params[:id])
   @comment.destroy
   flash[:notice] = "Comment successfully deleted!"

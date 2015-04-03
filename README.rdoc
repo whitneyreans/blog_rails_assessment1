@@ -1,28 +1,11 @@
-== README
+##Blog Assessment
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A blog site that allows you to sign up, log in as a user, and write blog posts. You can also comment on blog posts, which sends a text message to the user.
 
-Things you may want to cover:
+##Credits
 
-* Ruby version
+Whitney Reans
 
-* System dependencies
+##License
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+MIT License

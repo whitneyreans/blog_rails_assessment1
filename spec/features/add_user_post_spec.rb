@@ -11,4 +11,16 @@ describe 'the add blog post process', js: true do
     click_on 'Post'
     expect(page).to have_content 'Today'
   end
+
+  it "edits a post" do
+    user = FactoryGirl.create(:user)
+    post = FactoryGirl.create(:post)
+    visit user_post_path(user, post)
+    click_on "Edit"
+    fill_in "Title", :with => "super stuff"
+    fill_in "Body", :with => "cool stuff"
+    fill_in "Date", :with => "01/05/1992"
+    click_on "Post"
+    expect(page). to have_content "cool stuff"
+  end
 end

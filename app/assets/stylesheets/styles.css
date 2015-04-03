@@ -1,0 +1,52 @@
+
+.navbar {
+  width: 100%;
+  height: 100px;
+}
+
+.login {
+
+  float: right;
+  display: inline;
+}
+
+.login a {
+  text-decoration: none;
+  font-family: "DK Sleepy Time";
+  font-size: 20px;
+}
+
+.signup {
+  display: inline;
+}
+
+.signup a {
+  text-decoration: none;
+  font-family: "DK Sleepy Time";
+  font-size: 20px;
+}
+
+
+.header {
+  color: #FA8EB4;
+  font-family: "Paper Banner";
+  font-size: 50px;
+  text-align: center;
+}
+
+.yield {
+  font-family: "DK Sleepy Time";
+  text-align: center;
+  font-size: 20px;
+}
+
+.yield a {
+  color: black;
+  font-weight: bold;
+}
+
+.comments {
+  float: right;
+  padding-right: 100px;
+  padding-top: 100px;
+}

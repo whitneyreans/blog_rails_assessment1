@@ -4,6 +4,7 @@ FactoryGirl.define do
     email("me@me.com")
     password("test1234")
     id(2)
+    phone("9183132501")
   end
 
   factory(:post) do
